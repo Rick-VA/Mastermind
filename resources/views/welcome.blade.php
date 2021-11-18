@@ -1,18 +1,22 @@
 @extends('main')
 
 @section('body')
+<nav>
+    <a href="/register">Signup</a>
+    <a href="/login">Login</a>
 
 
-<div class="welkom">
-    mastermind online
-</div>
-
-
-<div class="playbox">
-    Play
-    <div class="playbutton">
-
+    <div class="welkom">
+        mastermind online
     </div>
-</div>
-
+</nav>
+<a href="/play">
+    <div class="playbox">
+        Play
+        <div class="play">
+            <div class="playbutton">
+            </div>
+        </div>
+    </div>
+</a>
 @endsection

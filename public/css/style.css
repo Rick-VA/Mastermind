@@ -3,12 +3,16 @@ body {
     font-family: 'Comic Neue', cursive;
 }
 
+nav {
+    background-color: rgb(45, 45, 255);
+}
+
 h2 {
     color: white;
 }
 
 a {
-    text-decoration: underline;
+    text-decoration: none;
     color: white;
 }
 
@@ -35,23 +39,32 @@ p {
     color: white;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
 }
 
 .playbox {
     color: white;
     font-family: 'Comic Neue', cursive;
-    position: relative;
-    left: 50%;
-    top: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 210px;
+    font-size: 40px;
+}
+
+.play {
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    padding-left: 40px;
+    padding-top: 25px;
+    border-radius: 3px;
 }
 
 .playbutton {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 0;
-    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-top: 25px solid transparent;
     border-left: 50px solid white;
     border-bottom: 25px solid transparent;
