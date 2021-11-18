@@ -1,5 +1,5 @@
 body {
-    background-color: blue;
+    background-color: rgb(45, 45, 255);
     font-family: 'Comic Neue', cursive;
 }
 
@@ -14,6 +14,15 @@ a {
 
 a:hover {
     color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a.btn {
+    color: black;
+    width: 170px;
 }
 
 p {
@@ -55,4 +64,26 @@ p {
 .formcontrol {
     display: flex;
     justify-content: center;
+    border-radius: 3px;
+    border: 1px black solid;
+}
+
+.btn {
+    background-color: white;
+    display: flex;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px black solid;
+}
+
+.container {
+    text-decoration: none;
+    display: flex;
+}
+
+.nav-item li {
+    display: flex;
+    margin-left: -40px;
+    flex-direction: row;
+    width: 100px;
 }

@@ -27,7 +27,7 @@
 
                 </div>
                 <div class="formgroup">
-                    <input type="submit" name="submit" class="btn btn-primary" value="Submit">
+                    <input type="submit" name="submit" class="btn" value="Submit">
                 </div>
                 <p>Already have an account? <a href="/login">Login here</a>.</p>
             </form>
