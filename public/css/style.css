@@ -1,5 +1,23 @@
 body {
     background-color: blue;
+    font-family: 'Comic Neue', cursive;
+}
+
+h2 {
+    color: white;
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
+p {
+    color: white;
 }
 
 .welkom {
@@ -28,4 +46,13 @@ body {
     border-top: 25px solid transparent;
     border-left: 50px solid white;
     border-bottom: 25px solid transparent;
+}
+
+.formgroup {
+    color: white;
+}
+
+.formcontrol {
+    display: flex;
+    justify-content: center;
 }
