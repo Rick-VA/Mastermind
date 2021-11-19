@@ -1,10 +1,10 @@
 body {
-    background-color: rgb(45, 45, 255);
+    background-color: rgb(55, 55, 255);
     font-family: 'Comic Neue', cursive;
 }
 
 nav {
-    background-color: rgb(45, 45, 255);
+    color: white;
 }
 
 h2 {
@@ -34,7 +34,14 @@ p {
 }
 
 .welkom {
-    font-family: 'Comic Neue', cursive;
+    font-size: 70px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
+}
+
+.welkom-1 {
     font-size: 70px;
     color: white;
     display: flex;

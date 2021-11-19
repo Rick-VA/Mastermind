@@ -6,7 +6,7 @@
     <a href="/login">Login</a>
 
 
-    <div class="welkom">
+    <div class="welkom-1">
         mastermind online
     </div>
 </nav>
