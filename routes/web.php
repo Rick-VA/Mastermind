@@ -28,3 +28,10 @@ Route::get('/login', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/play', function () {
+    return view('game');
+});
+
+
+Route::get('/play', [App\Http\Controllers\Mastermindgame::class, 'index']);

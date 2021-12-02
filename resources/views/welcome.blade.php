@@ -2,7 +2,7 @@
 
 @section('body')
 <nav>
-    <a href="/register">Signup</a>
+    <a href="/register">Register</a>
     <a href="/login">Login</a>
 
 
@@ -10,13 +10,15 @@
         mastermind online
     </div>
 </nav>
-<a href="/play">
-    <div class="playbox">
-        Play
-        <div class="play">
-            <div class="playbutton">
-            </div>
-        </div>
+
+<div class="playbox">
+    <div class="play">
+        <a href="/play">
+            <button class="button">
+                Play
+            </button>
+        </a>
     </div>
-</a>
+</div>
+
 @endsection
