@@ -19,6 +19,9 @@
             </button>
         </a>
     </div>
+    <div class="uitleg">
+        <!--vraagteken (dit kan je gewoon weghalen)-->
+    </div>
 </div>
 
 @endsection
