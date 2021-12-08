@@ -6,9 +6,16 @@ use Illuminate\Http\Request;
 
 class Mastermindgame extends Controller
 {
-    public function index(){
-        
-    }
+    public function layout()
+    {
 
-    
+        $speelbord = [['', '', '', ''], ['', '', '', ''], ['', '', '', ''], ['', '', '', ''], ['', '', '', ''], ['', '', '', ''],];
+
+        foreach ($speelbord as $a)
+
+        var_dump($a);
+
+
+        return view('game');
+    }
 }

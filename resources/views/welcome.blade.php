@@ -20,7 +20,9 @@
         </a>
     </div>
     <div class="uitleg">
-        <!--vraagteken (dit kan je gewoon weghalen)-->
+        <a href="/uitleg">
+            <img src="/images/vraag.png" alt="">
+        </a>
     </div>
 </div>
 
