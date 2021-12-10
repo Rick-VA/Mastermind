@@ -9,13 +9,18 @@ class Mastermindgame extends Controller
     public function layout()
     {
 
-        $speelbord = [['', '', '', ''], ['', '', '', ''], ['', '', '', ''], ['', '', '', ''], ['', '', '', ''], ['', '', '', ''],];
+        $speelbord = [
+            ["null", "null", "null", "null"], ["null", "null", "null", "null"], ["null", "null", "null", "null"],
+            ["null", "null", "null", "null"], ["null", "null", "null", "null"], ["null", "null", "null", "null"],
+        ];
 
-        foreach ($speelbord as $a)
+        foreach ($speelbord as $a) {
 
-        var_dump($a);
+            dd($speelbord);
 
 
-        return view('game');
+
+            return view('game');
+        }
     }
 }
