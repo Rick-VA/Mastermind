@@ -151,3 +151,19 @@ p {
     display: flex;
     margin: auto;
 }
+
+.uitleg {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    margin: auto;
+    padding-top: 250px;
+    color: white;
+}
+
+.uitleg2 {
+    font-size: 50px;
+    justify-content: center;
+    display: flex;
+    color: white;
+}
