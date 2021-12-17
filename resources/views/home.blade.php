@@ -26,17 +26,26 @@
 
 
 
-    <div class="welkom">
+<nav>
+
+
+    <div class="welkom-1">
         mastermind online
     </div>
 </nav>
-<a href="/play">
-    <div class="playbox">
-        Play
-        <div class="play">
-            <div class="playbutton">
-            </div>
-        </div>
+
+<div class="playbox">
+    <div class="play">
+        <a href="/play">
+            <button class="button">
+                Play
+            </button>
+        </a>
     </div>
-</a>
+    <div class="uitleg-login">
+        <a href="/uitleg-user">
+            <img src="/images/vraag.png" alt="">
+        </a>
+    </div>
+</div>
 @endsection

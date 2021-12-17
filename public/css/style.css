@@ -167,3 +167,45 @@ p {
     display: flex;
     color: white;
 }
+
+.button2 {
+    font-family: 'Comic Neue', cursive;
+    padding: 15px 25px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(63, 63, 63);
+}
+
+.button2:hover {
+    background-color: black
+}
+
+.button2:active {
+    background-color: black;
+    box-shadow: 0 5px rgb(63, 63, 63);
+    transform: translateY(4px);
+}
+
+.uitleg-login {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    margin: auto;
+    padding-top: 190px;
+    padding-left: 50px;
+    color: white;
+}
+
+table {
+    border: 2px black solid;
+}
+
+td {
+    border: 2px black solid;
+}

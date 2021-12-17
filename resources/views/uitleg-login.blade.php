@@ -6,7 +6,7 @@
     Uitleg
 </div>
 
-<div class="terug"><a href="/">
+<div class="terug"><a href="/home">
     <button class="button2">
          Terug
     </button></a>

@@ -3,15 +3,22 @@
 @section('body')
 
 
-<form class="random">
-    <input type="submit" value="submit">
-    <a href="/play"></a>
-</form>
+<div class="game">
+    <table>
+        <br>
+        @foreach ($speelbord as $row)
+            <tr>
+                @foreach ($row as $collumn)
+                    <td>
 
-
-
-<div class="gamebord">
-    
+                        {{$collumn}}
+                    </td>
+                    
+                @endforeach
+            </tr>
+            
+        @endforeach
+    </table>
 </div>
 
 @endsection

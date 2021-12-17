@@ -8,19 +8,36 @@ class Mastermindgame extends Controller
 {
     public function layout()
     {
+        // begin of the array
+        $speelbord = [];
 
-        $speelbord = [
-            ["null", "null", "null", "null"], ["null", "null", "null", "null"], ["null", "null", "null", "null"],
-            ["null", "null", "null", "null"], ["null", "null", "null", "null"], ["null", "null", "null", "null"],
-        ];
+        for ($aantal = 0; $aantal < 10; $aantal++) {
 
-        foreach ($speelbord as $a) {
-
-            dd($speelbord);
-
-
-
-            return view('game');
+            // array with 4 items
+            $speelbord[$aantal] = [null, null, null, null];
         }
+
+        $speelbord[0][0] = rand(0,4);
+
+        echo '<table>';
+            foreach ($speelbord as $row){
+                echo'<tr>';
+                foreach($row as $position){
+                    echo'<td>';
+                    if ($position === 'null'){
+                        echo "Fout";
+                    }
+                    else{
+                        echo "goed";
+                    }
+                    echo '</td>';
+
+                }
+                echo '</tr>';
+            }
+        echo '</table>';
+        
+
+            return view('game')->with(['speelbord' => $speelbord]);
     }
 }
