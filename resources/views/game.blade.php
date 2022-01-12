@@ -4,21 +4,67 @@
 
 
 <div class="game">
-    <table>
-        <br>
         @foreach ($speelbord as $row)
-            <tr>
+            <p>
                 @foreach ($row as $collumn)
-                    <td>
+                    <p>
 
                         {{$collumn}}
-                    </td>
+                    </p>
                     
                 @endforeach
-            </tr>
+            </p>
             
         @endforeach
-    </table>
+    
+</div>
+
+<div class="game">
+        @foreach ($speelbord as $row)
+            <p>
+                @foreach ($row as $collumn)
+                    <p>
+
+                        {{$collumn}}
+                    </p>
+                    
+                @endforeach
+            </p>
+            
+        @endforeach
+    
+</div>
+
+<div class="game">
+        @foreach ($speelbord as $row)
+            <p>
+                @foreach ($row as $collumn)
+                    <p>
+
+                        {{$collumn}}
+                    </p>
+                    
+                @endforeach
+            </p>
+            
+        @endforeach
+    
+</div>
+
+<div class="game">
+        @foreach ($speelbord as $row)
+            <p>
+                @foreach ($row as $collumn)
+                    <p>
+
+                        {{$collumn}}
+                    </p>
+                    
+                @endforeach
+            </p>
+            
+        @endforeach
+    
 </div>
 
 @endsection

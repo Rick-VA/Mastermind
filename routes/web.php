@@ -25,8 +25,6 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Auth::routes();
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/play', function () {
@@ -46,3 +44,8 @@ Route::get('/uitleg-user', function () {
 
 
 Route::get('/test', [App\Http\Controllers\test::class, 'show']);
+
+Route::get('/code', [App\Http\Controllers\users::class, 'code']);
+
+Route::get('/total', [App\Http\Controllers\total::class, 'total']);
+

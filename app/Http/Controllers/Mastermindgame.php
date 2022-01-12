@@ -19,25 +19,6 @@ class Mastermindgame extends Controller
 
         $speelbord[0][0] = rand(0,4);
 
-        echo '<table>';
-            foreach ($speelbord as $row){
-                echo'<tr>';
-                foreach($row as $position){
-                    echo'<td>';
-                    if ($position === 'null'){
-                        echo "Fout";
-                    }
-                    else{
-                        echo "goed";
-                    }
-                    echo '</td>';
-
-                }
-                echo '</tr>';
-            }
-        echo '</table>';
-        
-
             return view('game')->with(['speelbord' => $speelbord]);
     }
 }

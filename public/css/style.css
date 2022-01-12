@@ -209,3 +209,9 @@ table {
 td {
     border: 2px black solid;
 }
+
+.game {
+    display: flex;
+    margin: auto;
+    float: left;
+}
