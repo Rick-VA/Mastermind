@@ -28,7 +28,7 @@ class Mastermindgame extends Controller
                         echo "Fout";
                     }
                     else{
-                        echo "goed";
+                        echo "Goed";
                     }
                     echo '</td>';
 

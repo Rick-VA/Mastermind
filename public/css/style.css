@@ -203,9 +203,20 @@ p {
 }
 
 table {
-    border: 2px black solid;
+    height: 410px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    font-size: 25px;
+    background: grey;
+    width: 20vw;
+    border-radius: 5px;
+    border: 2px rgb(150, 150, 150) solid;
 }
 
 td {
-    border: 2px black solid;
+    border: 2px rgb(150, 150, 150) solid;
+    border-radius: 5px;
 }
