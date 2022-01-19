@@ -19,6 +19,7 @@ class Mastermindgame extends Controller
 
         $speelbord[0][0] = rand(0,4);
 
+<<<<<<< HEAD
         echo '<table>';
             foreach ($speelbord as $row){
                 echo'<tr>';
@@ -38,6 +39,8 @@ class Mastermindgame extends Controller
         echo '</table>';
         
 
+=======
+>>>>>>> 49c107493d2e268a81e204b3c80211b37485f473
             return view('game')->with(['speelbord' => $speelbord]);
     }
 }

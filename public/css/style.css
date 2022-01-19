@@ -217,6 +217,16 @@ table {
 }
 
 td {
+<<<<<<< HEAD
     border: 2px rgb(150, 150, 150) solid;
     border-radius: 5px;
+=======
+    border: 2px black solid;
+}
+
+.game {
+    display: flex;
+    margin: auto;
+    float: left;
+>>>>>>> 49c107493d2e268a81e204b3c80211b37485f473
 }
