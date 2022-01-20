@@ -10,7 +10,7 @@ class Mastermindgame extends Controller
     {
 
         //the answer
-        $answer = ['r', 'b', 'g', 'y'];
+        $answer = ['rood', 'blauw', 'geel', 'groen'];
 
         
         // playboard, use /game in form to use it in the blade

@@ -1,18 +1,164 @@
 @extends('main')
 
 @section('body')
-
-    <form method="POST" action="/game">
-        @csrf
-        
-        <input type="text" id="color1" name="color1">
-        <input type="text" id="color2" name="color2">
-        <input type="text" id="color3" name="color3">
-        <input type="text" id="color4" name="color4"> 
-        <input type="submit" value="Submit">
-    </form>
+<div class="terug1">
+    <div class="terug">
+        <a href="/">
+            <button class="button2">
+                terug
+            </button>
+        </a>
+    </div>
 
 
+    <div class="playbox">
+        <form method="POST" action="/game">
+            @csrf
+
+            <table>
+                <tr>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                    <td>
+                        <button class="guess"></button>
+                    </td>
+                </tr>
 
 
-@endsection
+
+            </table>
+        </form>
+    </div>
+
+
+
+    @endsection
