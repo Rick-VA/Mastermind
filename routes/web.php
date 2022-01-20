@@ -32,7 +32,6 @@ Route::get('/play', function () {
 });
 
 
-Route::get('/play', [App\Http\Controllers\Mastermindgame::class, 'layout']);
 
 Route::get('/uitleg', function () {
     return view('uitleg');
@@ -42,6 +41,7 @@ Route::get('/uitleg-user', function () {
     return view('uitleg-login');
 });
 
+Route::get('/mmind', [App\Http\Controllers\Mastermindgame::class, 'mmind']);
 
 Route::get('/test', [App\Http\Controllers\test::class, 'show']);
 
