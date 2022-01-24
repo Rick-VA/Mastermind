@@ -47,6 +47,15 @@ p {
     color: white;
     display: flex;
     justify-content: center;
+    margin: auto;
+}
+
+.logo {
+    font-size: 70px;
+    color: white;
+    margin: auto;
+    margin-top: 18px;
+    margin-left: 401px;
 }
 
 .playbox {
@@ -56,7 +65,7 @@ p {
     align-items: center;
     flex-direction: column;
     margin: auto;
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
 .play {
@@ -85,12 +94,6 @@ p {
     border-top: 25px solid transparent;
     border-left: 50px solid white;
     border-bottom: 25px solid transparent;
-}
-
-.uitleg {
-    padding-left: 50px;
-    font-size: 20px;
-    display: flex;
 }
 
 .formgroup {
@@ -129,6 +132,7 @@ p {
 }
 
 .button {
+    height: 70px;
     font-family: 'Comic Neue', cursive;
     padding: 15px 25px;
     font-size: 24px;
@@ -163,15 +167,28 @@ p {
 }
 
 .uitleg {
+    font-size: 20px;
     display: flex;
     justify-content: center;
     width: 500px;
     margin: auto;
-    padding-top: 250px;
+    padding-top: 200px;
+    padding-left: 50px;
+    color: white;
+}
+
+.uitleg1 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    margin: auto;
+    padding-top: 130px;
     color: white;
 }
 
 .uitleg2 {
+    margin-top: 18px;
     font-size: 50px;
     justify-content: center;
     display: flex;
@@ -217,7 +234,8 @@ table {
     width: 230px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: -40px;
+    margin-left: 50px;
     font-size: 25px;
     background: grey;
     border-radius: 5px;
@@ -230,6 +248,71 @@ td {
     border: 2px black solid;
 }
 
-button {
-    height: 100px;
+.answer {
+    height: 30px;
+    margin-top: 40px;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer1 {
+    border: none;
+}
+
+.check {
+    float: right;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(150, 150, 150);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.guess {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.blue {
+    background-color: blue;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.red {
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.green {
+    background-color: lime;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.yellow {
+    background-color: yellow;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.purple {
+    background-color: purple;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
 }

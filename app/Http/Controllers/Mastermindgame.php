@@ -8,9 +8,10 @@ class Mastermindgame extends Controller
 {
     public function game(Request $request)
     {
-
-        //the answer
+        
+        // the answer
         $answer = ['rood', 'blauw', 'geel', 'groen'];
+        
 
         
         // playboard, use /game in form to use it in the blade
@@ -22,13 +23,13 @@ class Mastermindgame extends Controller
         ];
 
 
-        //checks if the answer is in the guess
+        // checks if the answer is in the guess
         foreach($board as $key => $guess){
             foreach($guess as $guesskey => $color){
                 if($color == $answer[$guesskey]){
                     echo "goed"."<br>";
                 }
-                // checks if the answer is in the right position
+                // checks if the guess is in the right position
                 else{
                     if (in_array($color, $answer)){
                         echo "gevonden"."<br>";
