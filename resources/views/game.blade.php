@@ -19,173 +19,48 @@
     </div>
 </nav>
 
+        
+        <div class="antwoord">
+            {{implode(session()->get('code')) }}
+
+        </div>
+
     <div class="playbox">
 
         <form method="POST" action="/game">
             @csrf
-
             <table>
-                <tr>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                    <td>
-                        <button class="guess"></button>
-                    </td>
-                </tr>
+               @foreach ($board as $row)
+                 <tr>
+                    @foreach ($row as $collom)
+                        <td class="guess {{$collom}}"></td>
+                    @endforeach
+                 </tr>   
+               @endforeach
 
-
+    
 
             </table>
 
             <table method="post" action="/game" class="answer">
                 <tr>
                     <td class="answer1">
-                        <button class="blue" ></button>
+                        <input type="submit" value='blue' class="blue" name="check[blue]"/>
                     </td>
                     <td class="answer1">
-                        <button class="red" ></button>
+                    <input type="submit" value='red' class="red" name="check[red]"/>
                     </td>
                     <td class="answer1">
-                        <button class="green" ></button>
+                    <input type="submit" value='green' class="green" name="check[green]"/>
                     </td>
                     <td class="answer1">
-                        <button  class="yellow" ></button>
+                    <input type="submit" value='yellow' class="yellow" name="check[yellow]"/>
                     </td>
                     <td class="answer1">
-                        <button class="purple" ></button>
+                    <input type="submit" value='purple' class="purple" name="check[purple]"/>
                     </td>
                 </tr>
 
-                <input type="submit" value="Check" class="check">
             </table>
         </form>
     </div>

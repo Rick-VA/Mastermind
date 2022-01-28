@@ -45,7 +45,8 @@ Route::get('/uitleg-user', function () {
     return view('uitleg-login');
 });
 
-Route::post('/game', [App\Http\Controllers\Mastermindgame::class, 'game']);
+Route::post('/game', [App\Http\Controllers\Mastermindgame::class, 'check']);
+Route::get('/game', [App\Http\Controllers\Mastermindgame::class, 'game']);
 
 
 Route::get('/test', [App\Http\Controllers\test::class, 'show']);

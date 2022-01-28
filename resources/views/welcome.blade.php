@@ -13,7 +13,7 @@
 
 <div class="playbox">
     <div class="play">
-        <a href="/play">
+        <a href="/game">
             <button class="button">
                 Play
             </button>

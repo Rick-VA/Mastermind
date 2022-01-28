@@ -1,318 +1,323 @@
-body {
-    background-color: #2c6fbb;
-    font-family: 'Comic Neue', cursive;
-    /* rgb(55, 55, 255) */
-}
-
-nav {
-    color: white;
-}
-
-h2 {
-    color: white;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    color: black;
-}
-
-ul {
-    list-style-type: none;
-}
-
-a.btn {
-    color: black;
-    width: 170px;
-}
-
-p {
-    color: white;
-}
-
-.welkom {
-    font-size: 70px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin-top: -70px;
-}
-
-.welkom-1 {
-    font-size: 70px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-.logo {
-    font-size: 70px;
-    color: white;
-    margin: auto;
-    margin-top: 18px;
-    margin-left: 401px;
-}
-
-.playbox {
-    font-family: 'Comic Neue', cursive;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
-    margin-top: 200px;
-}
-
-.play {
-    width: 80px;
-    height: 80px;
-    padding-left: 40px;
-    padding-top: 25px;
-    border-radius: 3px;
-}
-
-.terug {
-    width: 80px;
-    height: 80px;
-    border-radius: 3px;
-}
-
-.terug1 {
-    font-family: 'Comic Neue', cursive;
-    display: flex;
-}
-
-.playbutton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 25px solid transparent;
-    border-left: 50px solid white;
-    border-bottom: 25px solid transparent;
-}
-
-.formgroup {
-    color: white;
-}
-
-.formcontrol {
-    display: flex;
-    justify-content: center;
-    border-radius: 3px;
-    border: 1px black solid;
-}
-
-.btn {
-    background-color: white;
-    display: flex;
-    margin-top: 5px;
-    border-radius: 3px;
-    border: 1px black solid;
-}
-
-.container {
-    text-decoration: none;
-    display: flex;
-}
-
-.nav-item li {
-    display: flex;
-    margin-left: -40px;
-    flex-direction: row;
-    width: 100px;
-}
-
-.card {
-    color: white;
-}
-
-.button {
-    height: 70px;
-    font-family: 'Comic Neue', cursive;
-    padding: 15px 25px;
-    font-size: 24px;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    color: #fff;
-    background-color: black;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px rgb(63, 63, 63);
-}
-
-.button:hover {
-    background-color: black
-}
-
-.button:active {
-    background-color: black;
-    box-shadow: 0 5px rgb(63, 63, 63);
-    transform: translateY(4px);
-}
-
-.gamebord {
-    background-color: #a9a9a9;
-    height: 600px;
-    width: 400px;
-    border-radius: 5px;
-    border: 2px black solid;
-    display: flex;
-    margin: auto;
-}
-
-.uitleg {
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    width: 500px;
-    margin: auto;
-    padding-top: 200px;
-    padding-left: 50px;
-    color: white;
-}
-
-.uitleg1 {
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    width: 500px;
-    margin: auto;
-    padding-top: 130px;
-    color: white;
-}
-
-.uitleg2 {
-    margin-top: 18px;
-    font-size: 50px;
-    justify-content: center;
-    display: flex;
-    color: white;
-}
-
-.button2 {
-    font-family: 'Comic Neue', cursive;
-    padding: 15px 25px;
-    font-size: 20px;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    color: #fff;
-    background-color: black;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px rgb(63, 63, 63);
-}
-
-.button2:hover {
-    background-color: black
-}
-
-.button2:active {
-    background-color: black;
-    box-shadow: 0 5px rgb(63, 63, 63);
-    transform: translateY(4px);
-}
-
-.uitleg-login {
-    display: flex;
-    justify-content: center;
-    width: 500px;
-    margin: auto;
-    padding-top: 190px;
-    padding-left: 50px;
-    color: white;
-}
-
-table {
-    height: 340px;
-    width: 230px;
-    display: flex;
-    justify-content: center;
-    margin-top: -40px;
-    margin-left: 50px;
-    font-size: 25px;
-    background: grey;
-    border-radius: 5px;
-    border: 2px rgb(150, 150, 150) solid;
-}
-
-td {
-    border: 2px rgb(150, 150, 150) solid;
-    border-radius: 5px;
-    border: 2px black solid;
-}
-
-.answer {
-    height: 30px;
-    margin-top: 40px;
-    background: none;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.answer1 {
-    border: none;
-}
-
-.check {
-    float: right;
-    color: white;
-    font-size: 20px;
-    background-color: rgb(150, 150, 150);
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.guess {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-}
-
-.blue {
-    background-color: blue;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.red {
-    background-color: red;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.green {
-    background-color: lime;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.yellow {
-    background-color: yellow;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.purple {
-    background-color: purple;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-}
+    body {
+        background-color: #2c6fbb;
+        font-family: 'Comic Neue', cursive;
+        /* rgb(55, 55, 255) */
+    }
+    
+    nav {
+        color: white;
+    }
+    
+    h2 {
+        color: white;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    a:hover {
+        color: black;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    a.btn {
+        color: black;
+        width: 170px;
+    }
+    
+    p {
+        color: white;
+    }
+    
+    .welkom {
+        font-size: 70px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin-top: -70px;
+    }
+    
+    .welkom-1 {
+        font-size: 70px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .logo {
+        font-size: 70px;
+        color: white;
+        margin: auto;
+        margin-top: 18px;
+        margin-left: 401px;
+    }
+    
+    .playbox {
+        font-family: 'Comic Neue', cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 200px;
+    }
+    
+    .play {
+        width: 80px;
+        height: 80px;
+        padding-left: 40px;
+        padding-top: 25px;
+        border-radius: 3px;
+    }
+    
+    .terug {
+        width: 80px;
+        height: 80px;
+        border-radius: 3px;
+    }
+    
+    .terug1 {
+        font-family: 'Comic Neue', cursive;
+        display: flex;
+    }
+    
+    .playbutton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 25px solid transparent;
+        border-left: 50px solid white;
+        border-bottom: 25px solid transparent;
+    }
+    
+    .formgroup {
+        color: white;
+    }
+    
+    .formcontrol {
+        display: flex;
+        justify-content: center;
+        border-radius: 3px;
+        border: 1px black solid;
+    }
+    
+    .btn {
+        background-color: white;
+        display: flex;
+        margin-top: 5px;
+        border-radius: 3px;
+        border: 1px black solid;
+    }
+    
+    .container {
+        text-decoration: none;
+        display: flex;
+    }
+    
+    .nav-item li {
+        display: flex;
+        margin-left: -40px;
+        flex-direction: row;
+        width: 100px;
+    }
+    
+    .card {
+        color: white;
+    }
+    
+    .button {
+        height: 70px;
+        font-family: 'Comic Neue', cursive;
+        padding: 15px 25px;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: black;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px rgb(63, 63, 63);
+    }
+    
+    .button:hover {
+        background-color: black
+    }
+    
+    .button:active {
+        background-color: black;
+        box-shadow: 0 5px rgb(63, 63, 63);
+        transform: translateY(4px);
+    }
+    
+    .gamebord {
+        background-color: #a9a9a9;
+        height: 600px;
+        width: 400px;
+        border-radius: 5px;
+        border: 2px black solid;
+        display: flex;
+        margin: auto;
+    }
+    
+    .uitleg {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        width: 500px;
+        margin: auto;
+        padding-top: 200px;
+        padding-left: 50px;
+        color: white;
+    }
+    
+    .uitleg1 {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        width: 500px;
+        margin: auto;
+        padding-top: 130px;
+        color: white;
+    }
+    
+    .uitleg2 {
+        margin-top: 18px;
+        font-size: 50px;
+        justify-content: center;
+        display: flex;
+        color: white;
+    }
+    
+    .button2 {
+        font-family: 'Comic Neue', cursive;
+        padding: 15px 25px;
+        font-size: 20px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: black;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px rgb(63, 63, 63);
+    }
+    
+    .button2:hover {
+        background-color: black
+    }
+    
+    .button2:active {
+        background-color: black;
+        box-shadow: 0 5px rgb(63, 63, 63);
+        transform: translateY(4px);
+    }
+    
+    .uitleg-login {
+        display: flex;
+        justify-content: center;
+        width: 500px;
+        margin: auto;
+        padding-top: 190px;
+        padding-left: 50px;
+        color: white;
+    }
+    
+    table {
+        height: 340px;
+        width: 230px;
+        display: flex;
+        justify-content: center;
+        margin-top: -40px;
+        margin-left: 50px;
+        padding-top: 15px;
+        font-size: 25px;
+        background: grey;
+        border-radius: 5px;
+        border: 2px rgb(150, 150, 150) solid;
+    }
+    
+    td {
+        border: 2px rgb(150, 150, 150) solid;
+        border-radius: 5px;
+        border: 2px black solid;
+    }
+    
+    .answer {
+        height: 30px;
+        margin-top: 40px;
+        background: none;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .answer1 {
+        border: none;
+    }
+    
+    .check {
+        float: right;
+        color: white;
+        font-size: 20px;
+        background-color: rgb(150, 150, 150);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .guess {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+    
+    .blue {
+        background-color: blue;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .red {
+        background-color: red;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .green {
+        background-color: lime;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .yellow {
+        background-color: yellow;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .purple {
+        background-color: purple;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    input {
+        font-size: 0px;
+    }
