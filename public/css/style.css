@@ -230,8 +230,6 @@
     }
     
     table {
-        height: 340px;
-        width: 230px;
         display: flex;
         justify-content: center;
         margin-top: -40px;
@@ -320,4 +318,24 @@
     
     input {
         font-size: 0px;
+    }
+    /* .check1 {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: white;
+    }*/
+    
+    .found {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: red;
+    }
+    
+    .good {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: lime;
     }

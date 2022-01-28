@@ -9,23 +9,29 @@ class Mastermindgame extends Controller
     public function game(Request $request)
     {
 
-        // the answer
+        //the answer
         if (!session()->has('code')) {
+
+            //answer choices
             $colors = ['red', 'blue', 'green', 'yellow', 'purple'];
+            // generates a random answer
             $answer = [$colors[random_int(0, 4)], $colors[random_int(0, 4)], $colors[random_int(0, 4)], $colors[random_int(0, 4)]];
 
 
 
-            // playboard, use /game in form to use it in the blade
+
+            //creates the array of the board
             $board = [];
             $check = [];
 
+
+            //the array of the board
             for ($i = 1; $i <= 8; $i++) {
                 $board[$i] = [
-                    'leeg',
-                    'leeg',
-                    'leeg',
-                    'leeg',
+                    'empty',
+                    'empty',
+                    'empty',
+                    'empty',
                 ];
                 $check[$i] =  [
                     'leeg',
@@ -34,6 +40,8 @@ class Mastermindgame extends Controller
                     'leeg',
                 ];
             }
+
+            //the sessions
             session()->put('code', $answer);
             session()->put('check', $check);
             session()->put('board', $board);
@@ -43,7 +51,8 @@ class Mastermindgame extends Controller
 
         $board = session()->get('board');
 
-        return view('game')->with(['board' => $board,'check'=>session()->get('check')]);
+        //returns the code to the view
+        return view('game')->with(['board' => $board, 'check' => session()->get('check')]);
     }
 
 
@@ -54,23 +63,24 @@ class Mastermindgame extends Controller
         $position = session()->get('position');
         $row = session()->get('row');
 
+        //go's to next row in the board
         foreach ($request->check as $color => $value) {
-           
+
             $board[$row][$position] = $color;
             $position++;
             if ($position == 4) {
-                    
+
                 $position = 0;
-                $this->checkRow( $row,$board[$row]);
+                $this->checkRow($row, $board[$row]);
                 $row++;
-        }
+            }
             if ($row == 9) {
                 session()->forget('code');
                 if (!session()->has('code'))
                     return ('game over');
             };
 
-
+            //sessions
             session()->put('position', $position);
             session()->put('board', $board);
             session()->put('row', $row);
@@ -78,44 +88,31 @@ class Mastermindgame extends Controller
 
 
 
-        return view('game')->with(['board' => $board,'check'=> session()->get('check')]);
+        return view('game')->with(['board' => $board, 'check' => session()->get('check')]);
     }
 
-    public function checkRow($row,$bord){
+    //checks if the answers are correct
+    public function checkRow($row, $bord)
+    {
         $code = session()->get('code');
         $check = session()->get('check');
-        foreach($bord as $index => $color){
-       
-            if ($code[$index] === $color){
-                $check[$row][$index] = 'good';
-                unset($code[$index]);
-            }
-        }
-        foreach($bord as  $color){
-            if ($index = array_search($color,$code)){
-                $check[$row][$index] = 'found';
-                unset($code[$index]);
-            }
-        }
-        session()->put('check',$check);
-      
+        foreach ($bord as $index => $color) {
 
+            if ($code[$index] === $color) {
+                $check[$row][$index] = 'goed';
+                unset($code[$index]);
+            }
+        }
+        foreach ($bord as $color) {
+            if ($index = array_search($color, $code)) {
+                $check[$row][$index] = 'gevonden';
+                unset($code[$index]);
+            }
+            
+        };
+
+
+        
+        session()->put('check', $check);
     }
 }
-
-// foreach($board as $key => $guess){
-//     foreach($guess as $guesskey => $color){
-//         if($color == $answer[$guesskey]){
-//             echo "goed"."<br>";
-//         }
-//         // checks if the guess is in the right position
-//         else{
-//             if (in_array($color, $answer)){
-//                 echo "gevonden"."<br>";
-//             }
-//             else{
-//                 echo 'fout';
-//             }
-//         }
-//     } 
-// }
