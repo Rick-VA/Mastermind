@@ -319,12 +319,13 @@
     input {
         font-size: 0px;
     }
-    /* .check1 {
+    
+    .check1 {
         height: 10px;
         width: 10px;
         border-radius: 50%;
         background-color: white;
-    }*/
+    }
     
     .found {
         height: 10px;
