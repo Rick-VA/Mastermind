@@ -55,3 +55,6 @@ Route::get('/code', [App\Http\Controllers\users::class, 'code']);
 
 Route::get('/total', [App\Http\Controllers\total::class, 'total']);
 
+Route::get('/win', function () {
+    return view('win');
+});
